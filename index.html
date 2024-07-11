@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Ajedrez con Matemáticas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Juego de Ajedrez con Matemáticas</h1>
+        <div id="game">
+            <div id="question-container">
+                <div id="question"></div>
+                <input type="number" id="answer" placeholder="Tu respuesta">
+                <button onclick="checkAnswer()">Enviar</button>
+                <div id="feedback"></div>
+            </div>
+            <div id="chessboard" class="chessboard"></div>
+            <button onclick="startGame()">Iniciar Juego</button>
+            <button onclick="nextLevel()">Comenzar Otro Nivel</button>
+            <button onclick="resetGame()">Reiniciar Juego</button>
+        </div>
+    </div>
+</body>
+</html>
